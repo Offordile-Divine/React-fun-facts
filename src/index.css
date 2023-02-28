@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+nav > h3, nav > h4 {
+  margin: 0;
+}
+
+.course {
+  color: white;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 30px;
+}
+
+.img h3 {
+  padding-left: 20px;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+nav > h4 {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.main {
+  padding: 57px 27px;
+  color: white;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+@media (max-width: 425px) {
+  nav {
+    padding: 15px 15px;
+  }
+
+  .img h3 {
+    font-size: 16px;
+  }
+
+  .course h4 {
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 18px;
+  }
+
+  .main--title {
+    font-size: 30px;
+  }
+}
